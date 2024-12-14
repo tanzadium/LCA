@@ -1,4 +1,4 @@
-def gaussJordan(A, b):
+def gauss_jordan(A, b):
     n = len(A)
     matrix = [A[i] + b[[i][0]] for i in range(n)]
 
@@ -17,7 +17,7 @@ def gaussJordan(A, b):
 if __name__ == '__main__':
     A = [[4,1,1], [1, 2, -2], [1, 2, 3]]
     b = [[6], [9], [10]]
-    x = gaussJordan(A,b)
+    x = gauss_jordan(A,b)
     print('Gaussian-Jordan elimination:')
     print("A=", A)
     print("b=", b)
